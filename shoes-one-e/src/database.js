@@ -9,5 +9,5 @@ mongoose.connect(uri, {useUnifiedTopology: true})
     .then((db) => console.log(`Conexion a DB exitosa`))
     .catch((err) => console.log(err))
 
-    //??? aqui estara?
+    
 module.exports = mongoose

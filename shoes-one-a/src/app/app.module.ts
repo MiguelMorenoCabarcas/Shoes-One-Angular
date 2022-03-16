@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -11,6 +12,8 @@ import { HomeComponent } from './components/home/home.component';
 import { Catalog1Component } from './components/catalog/catalog1/catalog1.component';
 import { Catalog2Component } from './components/catalog/catalog2/catalog2.component';
 import { ShoppinCardComponent } from './components/shoppin-card/shoppin-card.component';
+import { ContactComponent } from './components/contact/contact.component';
+
 
 
 @NgModule({
@@ -24,11 +27,16 @@ import { ShoppinCardComponent } from './components/shoppin-card/shoppin-card.com
     Catalog1Component,
     Catalog2Component,
     ShoppinCardComponent,
+    ContactComponent,
+    
+
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

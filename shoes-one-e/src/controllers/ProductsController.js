@@ -1,4 +1,4 @@
-// traer el modelo de datos
+  // traer el modelo de datos
 const Product = require("../Models/Product");
 
 // Mostrar los productos creados en la BD

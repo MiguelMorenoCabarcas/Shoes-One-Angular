@@ -3,7 +3,7 @@
     <div class="container register-container" id="container">
       <!-- sign in page -->
       <div class="form-container sign-in-container mb-4">
-        <form method="POST" action="#" class="form" id="login">
+        <form  class="form" #userForm="ngForm">
           <h1 class="form__title">Registro de usuario</h1>
           <div class="form__input-group">
             <label for="username">Nombre de usuario: </label>
@@ -11,7 +11,8 @@
               type="text"
               class="form__input"
               name="username"
-              id="username"
+              #username="ngModel"
+              [(ngModel)]="userService.selectedUser.username"
               maxlength="20"
               required
             />
@@ -21,8 +22,9 @@
             <input
               type="text"
               class="form__input"
-              name="username"
-              id="username"
+              name="email"
+              #name="ngModel"
+              [(ngModel)]="userService.selectedUser.email"
               maxlength="20"
               required
             />
@@ -32,8 +34,10 @@
             <input
               type="password"
               class="form__input"
-              name="pass"
-              id="pass"
+              name="password"
+              
+              #password="ngModel"
+              [(ngModel)]="userService.selectedUser.password"
               maxlength="20"
               required
             />
@@ -43,8 +47,9 @@
             <input
               type="password"
               class="form__input"
-              name="pass"
-              id="pass"
+              name="Cpass"
+              #Cpass="ngModel"
+              [(ngModel)]="userService.selectedUser.confirmPassword"
               maxlength="20"
               required
             />
@@ -63,7 +68,7 @@
               </div>
           </div>
           <div class="form__input-group mt-3">
-            <button type="submit" class="form__button">Registrate</button>
+            <button type="submit" class="form__button" (click)="register(userForm)">Registrate</button>
           </div>
         </form>
       </div>
