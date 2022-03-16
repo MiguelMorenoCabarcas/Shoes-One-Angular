@@ -1,4 +1,4 @@
-export class Product{
+export class product{
     _id:string;
     price:number;
     availableElemnts: number;
@@ -7,12 +7,12 @@ export class Product{
     shoppingCart: any
 
     constructor(
-        _id="",
-        price=0,
-        availableElemnts= 0,
-        description= "",
-        image="",
-        shoppingCart= []
+        _id:"",
+        price:0,
+        availableElemnts: 0,
+        description: "",
+        image: "",
+        shoppingCart: []
 
     ){
        this._id=_id,

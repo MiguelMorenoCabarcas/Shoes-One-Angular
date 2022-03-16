@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ProductsService {
 
-  selectedProduct: any
+  selectedProduct: Product
 
   url_api= `${environment.API_URL}/products`
 

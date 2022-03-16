@@ -28,7 +28,7 @@ export class ShoppinCardComponent implements OnInit {
 
     if(index > -1){
       tmp.splice(index, 1)
-      localStorage.setItem('productsAdded', `${JSON.stringify(tmp)}`)
+      localStorage.setItem('productsAdded', tmp)
       this.productService.selectedProduct.shoppingCart = JSON.parse(localStorage.getItem('productsAdded') || '[]')
     }
 

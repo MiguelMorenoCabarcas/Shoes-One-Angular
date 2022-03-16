@@ -38,7 +38,6 @@ export class Catalog1Component implements OnInit {
     if (product && chart !== '{}'){
       let tmp = JSON.parse(chart)
       tmp.push(product)
-      localStorage.setItem('productsAdded',`${JSON.stringify(tmp)}`)
       console.log(tmp)
     }
   }

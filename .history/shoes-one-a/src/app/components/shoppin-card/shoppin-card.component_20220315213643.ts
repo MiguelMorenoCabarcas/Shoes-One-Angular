@@ -23,17 +23,8 @@ export class ShoppinCardComponent implements OnInit {
     return total
   }
 
-  deleteOfChart(index: number){
-    let tmp = JSON.parse(localStorage.getItem('productsAdded') || '[]')
-
-    if(index > -1){
-      tmp.splice(index, 1)
-      localStorage.setItem('productsAdded', `${JSON.stringify(tmp)}`)
-      this.productService.selectedProduct.shoppingCart = JSON.parse(localStorage.getItem('productsAdded') || '[]')
-    }
-
-
-
+  deleteOfChart(index: any){
+    console.log(index)
   }
 
 }

@@ -17,23 +17,4 @@ export class ShoppinCardComponent implements OnInit {
     console.log(this.productService.selectedProduct.shoppingCart)
   }
 
-  priceSum(array: any){
-    let total = 0
-    for(let product of array) total += product.price 
-    return total
-  }
-
-  deleteOfChart(index: number){
-    let tmp = JSON.parse(localStorage.getItem('productsAdded') || '[]')
-
-    if(index > -1){
-      tmp.splice(index, 1)
-      localStorage.setItem('productsAdded', `${JSON.stringify(tmp)}`)
-      this.productService.selectedProduct.shoppingCart = JSON.parse(localStorage.getItem('productsAdded') || '[]')
-    }
-
-
-
-  }
-
 }

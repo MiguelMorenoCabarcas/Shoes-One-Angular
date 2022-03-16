@@ -1,18 +1,16 @@
-export class Product{
+export class product{
     _id:string;
     price:number;
     availableElemnts: number;
     description: string;
     image: string;
-    shoppingCart: any
 
     constructor(
-        _id="",
-        price=0,
-        availableElemnts= 0,
-        description= "",
-        image="",
-        shoppingCart= []
+        _id:"",
+        price:0,
+        availableElemnts: 0,
+        description: "",
+        image: ""
 
     ){
        this._id=_id,
@@ -20,7 +18,6 @@ export class Product{
        this.availableElemnts=availableElemnts,
        this.description=description,
        this.image=image
-       this.shoppingCart = shoppingCart
     }
 
 }
