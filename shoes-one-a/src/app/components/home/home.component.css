@@ -1,6 +1,9 @@
 .body{
     background: #e1e1e1;
+    height: 100%;
+    width: 100%;
 }
+
 
 .bg-banner{
     width: 100%;
@@ -48,11 +51,15 @@
 }
 .card-body{
     background-color: #f41823;
-    height: 160px;
+    height: 230px;
 }
 
 .card-img-top{
     height: 250px;
+}
+
+.btn-car{
+    height: 30px;
 }
 
 /* que buscas? */
@@ -104,19 +111,24 @@
 
 
     /* CARD */
+    .carousel-container{
+        height: 1700px;
+    }
+    
     .card-img-top{
-        height: 100px;
+        height: 255px;
         width: 100%;
     }
 
 .card-body{
     background-color: #f41823;
-    height: 120px;
+    height: 230px;
     width: 100%;
 }
 
 .card{
     margin: 1px;
+    height: 397px;
 }
 
 .card-title{
@@ -145,6 +157,17 @@
 .bg-1, .bg-2, .bg-3 .bg-4{
     width: 100%;
 }  
+
+.bg-banner{
+    width: 100%;
+    height: 600px;
+    background-image: url('../../../assets/img/Disfruta-de-nuestro-responsive.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center ;
+}
+
 
 
 
